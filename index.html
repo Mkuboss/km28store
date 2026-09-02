@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KM28store — Celebrity Vintage Tees</title>
+  <meta name="description" content="Limited celebrity graphic tees for people who actually live the culture. Vintage bootleg drops, ships worldwide from KM28store on Etsy." />
+  <meta property="og:title" content="KM28store — Celebrity Vintage Tees" />
+  <meta property="og:description" content="Limited celebrity graphic tees. Vintage bootleg drops, ships worldwide." />
+  <meta property="og:image" content="https://km28store-tees.netlify.app/og-image.jpg" />
+  <meta property="og:url" content="https://km28store-tees.netlify.app" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0a0a0a;
+      --surface: #111111;
+      --surface2: #1a1a1a;
+      --border: #2a2a2a;
+      --accent: #ff6b2b;
+      --accent-hover: #ff8c52;
+      --text: #f0f0f0;
+      --text-muted: #888;
+      --green: #22c55e;
+      --tag-limited: #ff6b2b;
+      --tag-vintage: #8b5cf6;
+      --tag-retro: #06b6d4;
+      --tag-hoodie: #f59e0b;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* ── ANNOUNCEMENT BAR ── */
+    .announcement {
+      background: var(--accent);
+      color: #fff;
+      text-align: center;
+      padding: 10px 16px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+    .announcement a { color: #fff; text-decoration: underline; }
+
+    /* ── HEADER ── */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 24px;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      background: rgba(10,10,10,0.95);
+      backdrop-filter: blur(10px);
+      z-index: 100;
+    }
+    .logo {
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      color: var(--text);
+      text-decoration: none;
+    }
+    .logo span { color: var(--accent); }
+    .header-meta {
+      font-size: 11px;
+      color: var(--text-muted);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .free-ship {
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 6px 14px;
+      font-size: 12px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .free-ship::before {
+      content: '';
+      width: 8px; height: 8px;
+      background: var(--green);
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      padding: 60px 24px 40px;
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .hero-eyebrow {
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .hero h1 {
+      font-size: clamp(32px, 6vw, 56px);
+      font-weight: 900;
+      line-height: 1.1;
+      letter-spacing: -1px;
+      margin-bottom: 16px;
+    }
+    .hero p {
+      font-size: 16px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 32px;
+    }
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    .stat { text-align: center; }
+    .stat-value {
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--accent);
+    }
+    .stat-label {
+      font-size: 11px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 2px;
+    }
+
+    /* ── PROMO BANNER ── */
+    .promo-banner {
+      background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
+      border: 1px solid var(--accent);
+      border-radius: 12px;
+      padding: 16px 24px;
+      margin: 0 24px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      text-align: center;
+      flex-wrap: wrap;
+    }
+    .promo-icon { font-size: 20px; }
+    .promo-text { font-size: 14px; font-weight: 600; }
+    .promo-text span { color: var(--accent); }
+
+    /* ── SEARCH & FILTER ── */
+    .controls {
+      padding: 0 24px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .search-wrap {
+      position: relative;
+    }
+    .search-icon {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      font-size: 16px;
+    }
+    #search {
+      width: 100%;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 16px 14px 44px;
+      color: var(--text);
+      font-size: 14px;
+      font-family: inherit;
+      transition: border-color 0.2s;
+      outline: none;
+    }
+    #search:focus { border-color: var(--accent); }
+    #search::placeholder { color: var(--text-muted); }
+
+    .filters {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .filter-btn {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 8px 18px;
+      color: var(--text-muted);
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: inherit;
+      letter-spacing: 0.5px;
+    }
+    .filter-btn:hover { border-color: var(--accent); color: var(--text); }
+    .filter-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+
+    /* ── RESULTS COUNT ── */
+    .results-info {
+      padding: 0 24px 16px;
+      max-width: 900px;
+      margin: 0 auto;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .results-info span { color: var(--text); font-weight: 600; }
+
+    /* ── PRODUCT GRID ── */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px;
+      padding: 0 24px 48px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .product-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+    }
+    .product-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent);
+      box-shadow: 0 8px 32px rgba(255,107,43,0.15);
+    }
+
+    .card-img-wrap {
+      position: relative;
+      aspect-ratio: 1;
+      overflow: hidden;
+      background: #1a1a1a;
+    }
+    .card-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+    .product-card:hover .card-img-wrap img { transform: scale(1.05); }
+
+    .card-tag {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+    .card-tag.LIMITED { background: var(--tag-limited); color: #fff; }
+    .card-tag.VINTAGE { background: var(--tag-vintage); color: #fff; }
+    .card-tag.RETRO   { background: var(--tag-retro);   color: #fff; }
+    .card-tag.HOODIE  { background: var(--tag-hoodie);  color: #000; }
+
+    .card-body {
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      flex: 1;
+    }
+    .card-name {
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1.4;
+      color: var(--text);
+    }
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: auto;
+    }
+    .card-price {
+      font-size: 15px;
+      font-weight: 900;
+      color: var(--accent);
+    }
+    .buy-btn {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 8px 14px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s;
+      font-family: inherit;
+      letter-spacing: 0.3px;
+    }
+    .buy-btn:hover { background: var(--accent-hover); }
+
+    /* ── EMPTY STATE ── */
+    .empty-state {
+      text-align: center;
+      padding: 60px 24px;
+      color: var(--text-muted);
+      grid-column: 1 / -1;
+    }
+    .empty-state h3 { font-size: 20px; margin-bottom: 8px; color: var(--text); }
+
+    /* ── TRUST BADGES ── */
+    .trust-section {
+      border-top: 1px solid var(--border);
+      padding: 32px 24px;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .trust-icon { font-size: 20px; }
+    .trust-label { font-weight: 600; color: var(--text); display: block; font-size: 13px; }
+    .trust-sub { font-size: 11px; color: var(--text-muted); }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 24px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .hero { padding: 40px 16px 32px; }
+      .grid { grid-template-columns: repeat(2, 1fr); gap: 12px; padding: 0 16px 40px; }
+      .controls { padding: 0 16px 20px; }
+      .trust-section { gap: 24px; }
+      header { padding: 14px 16px; }
+      .header-meta { display: none; }
+    }
+
+    /* ── CARD PLACEHOLDER ── */
+    .card-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #1a1a1a 0%, #111 100%);
+      position: relative;
+      min-height: 200px;
+    }
+    .card-placeholder[data-tag="LIMITED"] { background: linear-gradient(135deg, #2a1200 0%, #1a0a00 100%); border-bottom: 2px solid var(--tag-limited); }
+    .card-placeholder[data-tag="VINTAGE"] { background: linear-gradient(135deg, #1a0a2a 0%, #110a1a 100%); border-bottom: 2px solid var(--tag-vintage); }
+    .card-placeholder[data-tag="RETRO"]   { background: linear-gradient(135deg, #001a2a 0%, #00111a 100%); border-bottom: 2px solid var(--tag-retro); }
+    .card-placeholder[data-tag="HOODIE"]  { background: linear-gradient(135deg, #2a1a00 0%, #1a1100 100%); border-bottom: 2px solid var(--tag-hoodie); }
+    .placeholder-inner {
+      text-align: center;
+      padding: 16px;
+    }
+    .placeholder-icon {
+      font-size: 40px;
+      margin-bottom: 10px;
+      filter: grayscale(0.3);
+    }
+    .placeholder-name {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.3;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ANNOUNCEMENT BAR -->
+  <div class="announcement">
+    🔥 All orders ship via Etsy — Secure checkout, buyer protection guaranteed.
+    <a href="https://www.etsy.com/shop/KM28store" target="_blank" rel="noopener">Shop on Etsy →</a>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <div>
+      <a href="/" class="logo">KM28<span>.store</span></a>
+      <div class="header-meta">BOOTLEG CULTURE • EST. 2025 • SHIPS WORLDWIDE</div>
+    </div>
+    <div class="free-ship">FREE SHIPPING</div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-eyebrow">Celebrity Vintage Tees</div>
+    <h1>Wear the Culture<br>Own the Moment</h1>
+    <p>Limited celebrity graphic tees for people who actually live the culture.<br>Vintage bootleg drops, ships to your door.</p>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-value">53+</div><div class="stat-label">Designs</div></div>
+      <div class="stat"><div class="stat-value">$25</div><div class="stat-label">Starting</div></div>
+      <div class="stat"><div class="stat-value">🌍</div><div class="stat-label">Ships Worldwide</div></div>
+      <div class="stat"><div class="stat-value">100%</div><div class="stat-label">Cotton</div></div>
+    </div>
+  </section>
+
+  <!-- PROMO BANNER -->
+  <div class="promo-banner">
+    <span class="promo-icon">🎁</span>
+    <div class="promo-text">
+      Buy <span>2 tees</span>, get <span>FREE SHIPPING</span> — Checkout securely on Etsy with full buyer protection!
+    </div>
+  </div>
+
+  <!-- SEARCH & FILTER -->
+  <div class="controls">
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="search" placeholder="Search by name — Taylor Swift, Pedro Pascal..." aria-label="Search products" />
+    </div>
+    <div class="filters" role="group" aria-label="Filter by category">
+      <button class="filter-btn active" data-filter="ALL">ALL</button>
+      <button class="filter-btn" data-filter="LIMITED">LIMITED</button>
+      <button class="filter-btn" data-filter="VINTAGE">VINTAGE</button>
+      <button class="filter-btn" data-filter="RETRO">RETRO</button>
+      <button class="filter-btn" data-filter="HOODIE">HOODIES</button>
+    </div>
+  </div>
+
+  <div class="results-info"><span id="result-count">33</span> designs found</div>
+
+  <!-- PRODUCT GRID -->
+  <main class="grid" id="grid" aria-label="Product catalog"></main>
+
+  <!-- TRUST BADGES -->
+  <section class="trust-section" aria-label="Trust and guarantees">
+    <div class="trust-item">
+      <span class="trust-icon">🔒</span>
+      <div><span class="trust-label">Secure Checkout</span><span class="trust-sub">Powered by Etsy</span></div>
+    </div>
+    <div class="trust-item">
+      <span class="trust-icon">🚚</span>
+      <div><span class="trust-label">Ships Worldwide</span><span class="trust-sub">Tracked shipping</span></div>
+    </div>
+    <div class="trust-item">
+      <span class="trust-icon">👕</span>
+      <div><span class="trust-label">100% Cotton</span><span class="trust-sub">Premium quality</span></div>
+    </div>
+    <div class="trust-item">
+      <span class="trust-icon">⭐</span>
+      <div><span class="trust-label">5-Star Rated</span><span class="trust-sub">Verified on Etsy</span></div>
+    </div>
+    <div class="trust-item">
+      <span class="trust-icon">↩️</span>
+      <div><span class="trust-label">Easy Returns</span><span class="trust-sub">Etsy buyer protection</span></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>All items available on <a href="https://www.etsy.com/shop/KM28store" target="_blank" rel="noopener">KM28store · Etsy</a> — Secure checkout & buyer protection.</p>
+    <p style="margin-top:8px; font-size:11px;">© 2025 KM28store. Celebrity graphic tees for pop culture lovers.</p>
+  </footer>
+
+  <script>
+    const products = [
+      { name: "Anya Taylor-Joy", tag: "LIMITED", price: "$25.65", link: "https://www.etsy.com/listing/4452831825/limited-anya-taylor-joy-shirt-anya", img: "https://i.etsystatic.com/iap/listing/4452831825/il_300x300.jpg" },
+      { name: "Maggie Smith", tag: "LIMITED", price: "$25.65", link: "https://www.etsy.com/listing/4447438153/limited-maggie-smith-shirt-maggie-smith", img: "https://i.etsystatic.com/iap/listing/4447438153/il_300x300.jpg" },
+      { name: "George Lopez", tag: "RETRO", price: "$25.65", link: "https://www.etsy.com/listing/4447433915/retro-george-lopez-shirt-george-lopez", img: "https://i.etsystatic.com/iap/listing/4447433915/il_300x300.jpg" },
+      { name: "Marcello Hernandez", tag: "RETRO", price: "$25.65", link: "https://www.etsy.com/listing/4447426877/retro-marcello-hernandez-shirt-marcello", img: "https://i.etsystatic.com/iap/listing/4447426877/il_300x300.jpg" },
+      { name: "Joe Keery", tag: "VINTAGE", price: "$25.65", link: "https://www.etsy.com/listing/4442825533/vintage-joe-keery-shirt-joe-keery-90s", img: "https://i.etsystatic.com/iap/listing/4442825533/il_300x300.jpg" },
+      { name: "Jenna Ortega", tag: "VINTAGE", price: "$25.65", link: "https://www.etsy.com/listing/4442822595/vintage-jenna-ortega-shirt-jenna-ortega", img: "https://i.etsystatic.com/iap/listing/4442822595/il_300x300.jpg" },
+      { name: "Zendaya", tag: "VINTAGE", price: "$25.65", link: "https://www.etsy.com/listing/4442818799/vintage-zendaya-shirt-zendaya-90s-tshirt", img: "https://i.etsystatic.com/iap/listing/4442818799/il_300x300.jpg" },
+      { name: "Sydney Sweeney", tag: "VINTAGE", price: "$25.65", link: "https://www.etsy.com/listing/4442816125/vintage-sydney-sweeney-shirt-sydney", img: "https://i.etsystatic.com/iap/listing/4442816125/il_300x300.jpg" },
+      { name: "Florence Pugh", tag: "VINTAGE", price: "$25.65", link: "https://www.etsy.com/listing/4442811659/vintage-florence-pugh-shirt-florence", img: "https://i.etsystatic.com/iap/listing/4442811659/il_300x300.jpg" },
+      { name: "Timothée Chalamet", tag: "VINTAGE", price: "$25.65", link: "https://www.etsy.com/listing/4442809461/vintage-timothee-chalamet-shirt-timothee", img: "https://i.etsystatic.com/iap/listing/4442809461/il_300x300.jpg" },
+      { name: "Tom Holland", tag: "VINTAGE", price: "$25.65", link: "https://www.etsy.com/listing/4442805885/vintage-tom-holland-shirt-tom-holland", img: "https://i.etsystatic.com/iap/listing/4442805885/il_300x300.jpg" },
+      { name: "Jacob Elordi", tag: "VINTAGE", price: "$25.65", link: "https://www.etsy.com/listing/4442800861/vintage-jacob-elordi-shirt-jacob-elordi", img: "https://i.etsystatic.com/iap/listing/4442800861/il_300x300.jpg" },
+      { name: "Paul Mescal", tag: "VINTAGE", price: "$25.65", link: "https://www.etsy.com/listing/4442796905/vintage-paul-mescal-shirt-paul-mescal", img: "https://i.etsystatic.com/iap/listing/4442796905/il_300x300.jpg" },
+      { name: "Pedro Pascal", tag: "VINTAGE", price: "$25.65", link: "https://www.etsy.com/listing/4442793535/vintage-pedro-pascal-shirt-pedro-pascal", img: "https://i.etsystatic.com/iap/listing/4442793535/il_300x300.jpg" },
+      { name: "Austin Butler", tag: "VINTAGE", price: "$25.65", link: "https://www.etsy.com/listing/4442790385/vintage-austin-butler-shirt-austin", img: "https://i.etsystatic.com/iap/listing/4442790385/il_300x300.jpg" },
+      { name: "Barry Keoghan", tag: "VINTAGE", price: "$25.65", link: "https://www.etsy.com/listing/4442786827/vintage-barry-keoghan-shirt-barry", img: "https://i.etsystatic.com/iap/listing/4442786827/il_300x300.jpg" },
+      { name: "Glen Powell", tag: "VINTAGE", price: "$25.65", link: "https://www.etsy.com/listing/4442783275/vintage-glen-powell-shirt-glen-powell", img: "https://i.etsystatic.com/iap/listing/4442783275/il_300x300.jpg" },
+      { name: "Emma Stone", tag: "VINTAGE", price: "$25.65", link: "https://www.etsy.com/listing/4442779663/vintage-emma-stone-shirt-emma-stone-90s", img: "https://i.etsystatic.com/iap/listing/4442779663/il_300x300.jpg" },
+      { name: "Margot Robbie", tag: "VINTAGE", price: "$25.65", link: "https://www.etsy.com/listing/4442776071/vintage-margot-robbie-shirt-margot", img: "https://i.etsystatic.com/iap/listing/4442776071/il_300x300.jpg" },
+      { name: "Saoirse Ronan", tag: "VINTAGE", price: "$25.65", link: "https://www.etsy.com/listing/4442772497/vintage-saoirse-ronan-shirt-saoirse", img: "https://i.etsystatic.com/iap/listing/4442772497/il_300x300.jpg" },
+      { name: "Lily Collins", tag: "VINTAGE", price: "$25.65", link: "https://www.etsy.com/listing/4442769159/vintage-lily-collins-shirt-lily-collins", img: "https://i.etsystatic.com/iap/listing/4442769159/il_300x300.jpg" },
+      { name: "Millie Bobby Brown", tag: "VINTAGE", price: "$25.65", link: "https://www.etsy.com/listing/4442766131/vintage-millie-bobby-brown-shirt-millie", img: "https://i.etsystatic.com/iap/listing/4442766131/il_300x300.jpg" },
+      { name: "Sadie Sink", tag: "VINTAGE", price: "$25.65", link: "https://www.etsy.com/listing/4442763271/vintage-sadie-sink-shirt-sadie-sink-90s", img: "https://i.etsystatic.com/iap/listing/4442763271/il_300x300.jpg" },
+      { name: "Hailee Steinfeld", tag: "VINTAGE", price: "$25.65", link: "https://www.etsy.com/listing/4442759953/vintage-hailee-steinfeld-shirt-hailee", img: "https://i.etsystatic.com/iap/listing/4442759953/il_300x300.jpg" },
+      { name: "Sabrina Carpenter", tag: "VINTAGE", price: "$25.65", link: "https://www.etsy.com/listing/4442756741/vintage-sabrina-carpenter-shirt-sabrina", img: "https://i.etsystatic.com/iap/listing/4442756741/il_300x300.jpg" },
+      { name: "Olivia Rodrigo", tag: "VINTAGE", price: "$25.65", link: "https://www.etsy.com/listing/4442753399/vintage-olivia-rodrigo-shirt-olivia", img: "https://i.etsystatic.com/iap/listing/4442753399/il_300x300.jpg" },
+      { name: "Ariana Grande", tag: "VINTAGE", price: "$25.65", link: "https://www.etsy.com/listing/4442749953/vintage-ariana-grande-shirt-ariana", img: "https://i.etsystatic.com/iap/listing/4442749953/il_300x300.jpg" },
+      { name: "Taylor Swift", tag: "VINTAGE", price: "$25.65", link: "https://www.etsy.com/listing/4442746745/vintage-taylor-swift-shirt-taylor-swift", img: "https://i.etsystatic.com/iap/listing/4442746745/il_300x300.jpg" },
+      { name: "Billie Eilish", tag: "VINTAGE", price: "$25.65", link: "https://www.etsy.com/listing/4442743311/vintage-billie-eilish-shirt-billie", img: "https://i.etsystatic.com/iap/listing/4442743311/il_300x300.jpg" },
+      { name: "Dua Lipa", tag: "VINTAGE", price: "$25.65", link: "https://www.etsy.com/listing/4442739737/vintage-dua-lipa-shirt-dua-lipa-90s", img: "https://i.etsystatic.com/iap/listing/4442739737/il_300x300.jpg" },
+      { name: "Selena Gomez", tag: "VINTAGE", price: "$25.65", link: "https://www.etsy.com/listing/4442736363/vintage-selena-gomez-shirt-selena-gomez", img: "https://i.etsystatic.com/iap/listing/4442736363/il_300x300.jpg" },
+      { name: "Charli XCX", tag: "VINTAGE", price: "$25.65", link: "https://www.etsy.com/listing/4442732977/vintage-charli-xcx-shirt-charli-xcx-90s", img: "https://i.etsystatic.com/iap/listing/4442732977/il_300x300.jpg" },
+      { name: "Chappell Roan", tag: "VINTAGE", price: "$25.65", link: "https://www.etsy.com/listing/4442729451/vintage-chappell-roan-shirt-chappell", img: "https://i.etsystatic.com/iap/listing/4442729451/il_300x300.jpg" },
+    ];
+
+    const grid = document.getElementById('grid');
+    const searchInput = document.getElementById('search');
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const resultCount = document.getElementById('result-count');
+    let activeFilter = 'ALL';
+
+    function renderCards(list) {
+      resultCount.textContent = list.length;
+      if (list.length === 0) {
+        grid.innerHTML = `<div class="empty-state"><h3>No results found</h3><p>Try a different name or filter.</p></div>`;
+        return;
+      }
+      grid.innerHTML = list.map(p => `
+        <article class="product-card" onclick="window.open('${p.link}?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow','_blank')">
+          <div class="card-img-wrap">
+            <div class="card-placeholder" data-tag="${p.tag}">
+              <div class="placeholder-inner">
+                <div class="placeholder-icon">👕</div>
+                <div class="placeholder-name">${p.name}</div>
+              </div>
+            </div>
+            <span class="card-tag ${p.tag}">${p.tag}</span>
+          </div>
+          <div class="card-body">
+            <div class="card-name">${p.name} Vintage Tee</div>
+            <div class="card-footer">
+              <span class="card-price">${p.price}</span>
+              <a href="${p.link}?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow"
+                 target="_blank" rel="noopener"
+                 class="buy-btn"
+                 onclick="event.stopPropagation()"
+                 aria-label="Buy ${p.name} tee on Etsy">BUY →</a>
+            </div>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    function applyFilters() {
+      const q = searchInput.value.toLowerCase().trim();
+      const filtered = products.filter(p => {
+        const matchFilter = activeFilter === 'ALL' || p.tag === activeFilter;
+        const matchSearch = q === '' || p.name.toLowerCase().includes(q);
+        return matchFilter && matchSearch;
+      });
+      renderCards(filtered);
+    }
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeFilter = btn.dataset.filter;
+        applyFilters();
+      });
+    });
+
+    searchInput.addEventListener('input', applyFilters);
+
+    // Initial render
+    renderCards(products);
+  </script>
+</body>
+</html>
