@@ -551,8 +551,8 @@
       grid.innerHTML = list.map(p => `
         <article class="product-card" onclick="window.open('${p.link}?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow','_blank')">
           <div class="card-img-wrap">
-            <img src="${p.img}" alt="${p.name} Vintage Tee"
-              onerror="this.onerror=null;this.parentElement.innerHTML='<div class=\"card-placeholder\" data-tag=\"${p.tag}\"><div class=\"placeholder-inner\"><div class=\"placeholder-icon\">👕</div><div class=\"placeholder-name\">${p.name}</div></div></div><span class=\"card-tag ${p.tag}\">${p.tag}</span>'" />
+            <img src="${p.img}" alt="${p.name} Vintage Tee" style="width:100%;height:100%;object-fit:cover;display:block;"
+              onerror="this.style.display='none';this.parentElement.querySelector('.card-placeholder-fb').style.display='flex'">
             <span class="card-tag ${p.tag}">${p.tag}</span>
           </div>
           <div class="card-body">
