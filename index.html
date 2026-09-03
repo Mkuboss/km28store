@@ -424,6 +424,23 @@
     "sameAs": "https://www.etsy.com/shop/KM28store"
   }
   </script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NW05295HBN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NW05295HBN');
+
+    // Track product clicks
+    function trackClick(name) {
+      gtag('event', 'product_click', {
+        'event_category': 'catalog',
+        'event_label': name,
+        'value': 1
+      });
+    }
+  </script>
 </head>
 <body>
 
@@ -592,7 +609,7 @@
         return;
       }
       grid.innerHTML = list.map(p => `
-        <article class="product-card" onclick="location.href='${p.link}?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow'">
+        <article class="product-card" onclick="trackClick(p.name); location.href='${p.link}?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow'">
           <div class="card-img-wrap">
             <img loading="lazy" src="${p.img}" alt="${p.name} Vintage Tee" style="width:100%;height:100%;object-fit:cover;display:block;"
               onerror="this.style.display='none'">
