@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "slot": "header",
+    "active": true,
+    "type": "banner",
+    "title": "\ud83d\udd25 Sponsored",
+    "subtitle": "Your ad here \u2014 contact us",
+    "cta": "Learn More",
+    "url": "#",
+    "color_from": "#f97316",
+    "color_to": "#ef4444",
+    "logo": "\ud83d\udce2"
+  },
+  {
+    "id": 2,
+    "slot": "mid",
+    "active": false,
+    "type": "banner",
+    "title": "Sponsored",
+    "subtitle": "Your ad here",
+    "cta": "Shop Now",
+    "url": "#",
+    "color_from": "#6366f1",
+    "color_to": "#8b5cf6",
+    "logo": "\ud83d\udecd\ufe0f"
+  },
+  {
+    "id": 3,
+    "slot": "bottom",
+    "active": false,
+    "type": "banner",
+    "title": "Sponsored",
+    "subtitle": "Your ad here",
+    "cta": "Click Here",
+    "url": "#",
+    "color_from": "#0ea5e9",
+    "color_to": "#6366f1",
+    "logo": "\u26a1"
+  }
+]
