@@ -541,6 +541,8 @@
   </footer>
 
   <script>
+    document.addEventListener('DOMContentLoaded', function() {
+
     const products = [
       { name: "Sam Wilson", tag: "LIMITED", price: "$25.65", link: "https://www.etsy.com/listing/4422154361/", img: "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4422154361-sam-wilson.jpg" },
       { name: "FELIX", tag: "LIMITED", price: "$25.65", link: "https://www.etsy.com/listing/4426184564/", img: "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4426184564-felix-felix-sweater-felix.jpg" },
@@ -715,7 +717,9 @@
 
     // Initial render
     renderCards(products);
-  </script>
+  
+    });
+    </script>
   <div class="wishlist-count" id="wishCount" title="View wishlist">❤ <span id="wishNum">0</span></div>
 </body>
 </html>
