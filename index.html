@@ -541,1319 +541,386 @@
   </footer>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-
     const products = [
-    {
-        "listing_id": 4422154361,
-        "title": "Limited Sam Wilson Shirt Actor Movie Tshirt, Retro Vintage Bootleg Graphic Tee Hoodie Sweatshirt Gift Ud",
-        "price": "$25.65",
-        "category": "HOODIES",
-        "img_url": "",
-        "img_slug": "4422154361-limited-sam-wilson-shirt-actor-movie-tshirt-retro-.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4422154361/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "custom shirt",
-            "Bootleg shirt",
-            "gift for christmas",
-            "gift for dad",
-            "Birthday Gift",
-            "Sam Wilson",
-            "Sam Wilson shirt",
-            "Captain America",
-            "Sam Wilson merch",
-            "Sam Wilson tribute",
-            "Sam Wilson fan",
-            "Sam Wilson gift"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4426184564,
-        "title": "Limited FELIX, Felix Sweater, Felix Vintage Shirt, Felix Retro 90s Tshirt, Felix Bootleg Tee",
-        "price": "$25.65",
-        "category": "RETRO",
-        "img_url": "",
-        "img_slug": "4426184564-limited-felix-felix-sweater-felix-vintage-shirt-fe.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4426184564/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "custom shirt",
-            "Bootleg shirt",
-            "gift for christmas",
-            "gift for dad",
-            "HAN",
-            "Birthday gift",
-            "HAN shirt",
-            "HAN fans",
-            "HAN merch",
-            "HAN vintage shirt",
-            "Lee Know shirt",
-            "Hyunjin shirt",
-            "Felix Shirt"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4426178709,
-        "title": "Limited CANDACE OWENS Shirt, Candace Owens Homage Tshirt, Candace Owens Fan Tees, Candace Owens Vintage 90s Sweater, Candace Owens Merch",
-        "price": "$25.65",
-        "category": "LIMITED",
-        "img_url": "",
-        "img_slug": "4426178709-limited-candace-owens-shirt-candace-owens-homage-t.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4426178709/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "custom shirt",
-            "Bootleg shirt",
-            "gift for christmas",
-            "gift for dad",
-            "Birthday gift",
-            "CANDACE OWENS",
-            "CANDACE OWENS shirt",
-            "CANDACE OWENS tees",
-            "CANDACE OWENS merch",
-            "Ben Shapiro Gift",
-            "Shapiro",
-            "Mor Shapiro",
-            "CANDACE OWENS Fan"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4424779783,
-        "title": "Limited Tom Cruise Shirt - Tom Cruise Tshirt,Tom Cruise T-shirt,Tom Cruise T shirt,Tom Cruise Merch,Tom Cruise Sweatshirt Ud",
-        "price": "$25.65",
-        "category": "LIMITED",
-        "img_url": "",
-        "img_slug": "4424779783-limited-tom-cruise-shirt-tom-cruise-tshirt-tom-cru.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4424779783/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "custom shirt",
-            "Bootleg shirt",
-            "gift for christmas",
-            "gift for dad",
-            "Birthday Gift",
-            "Tom Cruise",
-            "Tom Cruise vibtage",
-            "Tom Cruise sweater",
-            "Tom Cruise gift",
-            "Tom Cruise Tee",
-            "Nicole Kidman",
-            "Last Samurai",
-            "Tom Cruise Merch"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4424785710,
-        "title": "Limited HAN Shirt, Han Vintage Shirt, Han Retro 90s Tshirt, Han Bootleg Tee, Han Sweater, Han, Go Live Album Tee, Bang Chan Shirt",
-        "price": "$25.65",
-        "category": "RETRO",
-        "img_url": "",
-        "img_slug": "4424785710-limited-han-shirt-han-vintage-shirt-han-retro-90s-.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4424785710/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "custom shirt",
-            "Bootleg shirt",
-            "gift for christmas",
-            "gift for dad",
-            "HAN",
-            "Birthday gift",
-            "HAN shirt",
-            "HAN fans",
-            "HAN merch",
-            "HAN vintage shirt",
-            "Lee Know shirt",
-            "Hyunjin shirt",
-            "Felix Shirt"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4422156528,
-        "title": "Limited Sebastian Stan American actor Unisex Softstyle Vintage Shirt, Gift For Woman and Man Unisex T-Shirt Ud",
-        "price": "$25.65",
-        "category": "LIMITED",
-        "img_url": "",
-        "img_slug": "4422156528-limited-sebastian-stan-american-actor-unisex-softs.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4422156528/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "custom shirt",
-            "Bootleg shirt",
-            "gift for christmas",
-            "gift for dad",
-            "Birthday Gift",
-            "Sebastian Stan",
-            "Sebastian Stan shirt",
-            "Sebastian Stan fan",
-            "Sebastian Stan tees",
-            "Sebastian Stan hero",
-            "superhero Tshirt",
-            "Sebastian Stan merch"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4421453477,
-        "title": "Limited ANTONY STARR Shirt, Antony Starr Vintage Shirt, Antony Starr Retro 90s Tshirt, Antony Starr Sweatshirt Ud",
-        "price": "$25.65",
-        "category": "RETRO",
-        "img_url": "",
-        "img_slug": "4421453477-limited-antony-starr-shirt-antony-starr-vintage-sh.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4421453477/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "custom shirt",
-            "Bootleg shirt",
-            "gift for christmas",
-            "gift for dad",
-            "Birthday Gift",
-            "ANTONY STARR",
-            "ANTONY STARR shirt",
-            "ANTONY STARR vintage",
-            "ANTONY STARR merch",
-            "ANTONY STARR fan",
-            "ANTONY STARR retro",
-            "ANTONY STARR 90s",
-            "Karl Urban shirt"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4421455556,
-        "title": "Limited Mads Mikkelsen Vintage T-Shirt, Gift For dad and Man Unisex T-Shirt Ud",
-        "price": "$25.65",
-        "category": "LIMITED",
-        "img_url": "",
-        "img_slug": "4421455556-limited-mads-mikkelsen-vintage-t-shirt-gift-for-da.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4421455556/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "custom shirt",
-            "Bootleg shirt",
-            "gift for christmas",
-            "gift for dad",
-            "Birthday Gift",
-            "Mads Mikkelsen",
-            "Mads Mikkelsen shirt",
-            "Mads Mikkelsen tee",
-            "90s Vintage shirt",
-            "Tv show",
-            "Tv program",
-            "Movie",
-            "Mads Mikkelsen 90s"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4420703384,
-        "title": "Limited JOHN STAMOS Shirt, John Stamos Retro Tshirt, John Stamos Vintage Fan Tees, John Stamos Merch Gift, John Stamos Lover Kids Tee",
-        "price": "$25.65",
-        "category": "RETRO",
-        "img_url": "",
-        "img_slug": "4420703384-limited-john-stamos-shirt-john-stamos-retro-tshirt.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4420703384/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "custom shirt",
-            "Bootleg shirt",
-            "gift for christmas",
-            "gift for dad",
-            "Birthday Gift",
-            "JOHN STAMOS",
-            "JOHN STAMOS shirt",
-            "JOHN STAMOS vintage",
-            "JOHN STAMOS Merch",
-            "JOHN STAMOS fans",
-            "JOHN STAMOS tees",
-            "JOHN STAMOS gift",
-            "JOHN STAMOS tribute"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4420703366,
-        "title": "Limited JOHN OLIVER Shirt, John Oliver Fans Tees, John Oliver 90s Vintage T-Shirt, John Oliver Merch Gift, John Oliver Bootleg",
-        "price": "$25.65",
-        "category": "RETRO",
-        "img_url": "",
-        "img_slug": "4420703366-limited-john-oliver-shirt-john-oliver-fans-tees-jo.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4420703366/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "custom shirt",
-            "Bootleg shirt",
-            "gift for christmas",
-            "gift for dad",
-            "Birthday Gift",
-            "JOHN OLIVER",
-            "JOHN OLIVER shirt",
-            "JOHN OLIVER Vintage",
-            "JOHN OLIVER Gift",
-            "JOHN OLIVER Retro",
-            "JOHN OLIVER tribute",
-            "JOHN OLIVER 90s tee",
-            "JOHN OLIVER Merch"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4413992850,
-        "title": "Limited DEVON SAWA Shirt, Devon Sawa Retro Tshirt, Devon Sawa Vintage Fan Tees, Devon Sawa Merch Gift, Devon Sawa Kids Tee Sweatshirt",
-        "price": "$25.65",
-        "category": "RETRO",
-        "img_url": "",
-        "img_slug": "4413992850-limited-devon-sawa-shirt-devon-sawa-retro-tshirt-d.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4413992850/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "custom shirt",
-            "Bootleg shirt",
-            "gift for christmas",
-            "gift for dad",
-            "Birthday Gift",
-            "DEVON SAWA",
-            "DEVON SAWA shirt",
-            "DEVON SAWA Tee",
-            "DEVON SAWA Tees",
-            "DEVON SAWA sweater",
-            "DEVON SAWA Fan",
-            "DEVON SAWA Merch",
-            "DEVON SAWA Tshirt"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4413992870,
-        "title": "Limited Klaus Mikaelson Vintage T-Shirt, Gift For Woman and Man Unisex T-Shirt, gift for christmas",
-        "price": "$25.65",
-        "category": "RETRO",
-        "img_url": "",
-        "img_slug": "4413992870-limited-klaus-mikaelson-vintage-t-shirt-gift-for-w.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4413992870/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "custom shirt",
-            "Bootleg shirt",
-            "gift for christmas",
-            "gift for dad",
-            "Birthday Gift",
-            "The Vampire Diares",
-            "Klaus mikaelson",
-            "Joseph Morgan",
-            "Retro shirt",
-            "Vintage 90' Tee",
-            "Retro Tv show",
-            "Character tee"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4413992884,
-        "title": "Limited Stefan Salvatore Vintage T-Shirt, Gift For Women and Man Unisex T-Shirt, Movies and Series Tee",
-        "price": "$25.65",
-        "category": "LIMITED",
-        "img_url": "",
-        "img_slug": "4413992884-limited-stefan-salvatore-vintage-t-shirt-gift-for-.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4413992884/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "custom shirt",
-            "Bootleg shirt",
-            "gift for christmas",
-            "gift for dad",
-            "Birthday Gift",
-            "Stefan Salvatore",
-            "Salvatore Gift",
-            "Stefan Salvatore Tee",
-            "Salvatore Shirt",
-            "90s",
-            "salvatore tees",
-            "Damon Salvatore",
-            "Damon Tees"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4413358619,
-        "title": "Limited DAVID SPADE Shirt, David Spade Retro TShirt, David Spade Vintage Fan Tees, David Spade Kids Tee Sweatshirt, David Spade Merch Gift",
-        "price": "$25.65",
-        "category": "RETRO",
-        "img_url": "",
-        "img_slug": "4413358619-limited-david-spade-shirt-david-spade-retro-tshirt.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4413358619/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "custom shirt",
-            "Bootleg shirt",
-            "gift for christmas",
-            "gift for dad",
-            "DAVID SPADE",
-            "david spade shirt",
-            "david spade Tshirt",
-            "David Spade Tee",
-            "David Spade Fans",
-            "David Spade Merch",
-            "David Spade Gift",
-            "Birthday Gift"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4413357637,
-        "title": "Bootleg Sam Winchester Vintage T-Shirt, Gift For Women and Man Unisex T-Shirt, sweatshirt , gift for dad , gift for christmas",
-        "price": "$25.65",
-        "category": "VINTAGE",
-        "img_url": "",
-        "img_slug": "4413357637-bootleg-sam-winchester-vintage-t-shirt-gift-for-wo.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4413357637/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "custom shirt",
-            "Sam Winchester",
-            "Winchester brothers",
-            "Sam shirt",
-            "Jared Padelecki",
-            "vintage",
-            "Bootleg",
-            "Bootleg shirt",
-            "gift for christmas",
-            "gift for dad"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 1893848667,
-        "title": "animal cats lovers shirt, pets t-shirt",
-        "price": "$25.65",
-        "category": "LIMITED",
-        "img_url": "",
-        "img_slug": "1893848667-animal-cats-lovers-shirt-pets-t-shirt.jpg",
-        "etsy_url": "https://www.etsy.com/listing/1893848667/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "custom shirt",
-            "animal shirt"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 1892779421,
-        "title": "animal lovers shirt, pets t-shirt",
-        "price": "$25.65",
-        "category": "LIMITED",
-        "img_url": "",
-        "img_slug": "1892779421-animal-lovers-shirt-pets-t-shirt.jpg",
-        "etsy_url": "https://www.etsy.com/listing/1892779421/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "custom shirt",
-            "animal shirt"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4398526332,
-        "title": "Retro GEORGE LOPEZ Vintage Shirt, George Lopez Homage T-Shirt, George Lopez Fan Tees, George Lopez 90s Sweater, George Lopez Merch Gift",
-        "price": "$25.65",
-        "category": "RETRO",
-        "img_url": "",
-        "img_slug": "4398526332-retro-george-lopez-vintage-shirt-george-lopez-homa.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4398526332/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "custom shirt",
-            "GEORGE LOPEZ",
-            "GEORGE LOPEZ shirt",
-            "GEORGE LOPEZ Tshirt",
-            "GEORGE LOPEZ Tees",
-            "GEORGE LOPEZ Sweater",
-            "tom segura",
-            "jack black",
-            "movie gift",
-            "meme shirt",
-            "theo von",
-            "GEORGE LOPEZ gift",
-            "GEORGE LOPEZ fan"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4474327953,
-        "title": "Limited Tom Hardy Vintage Shirt, Tom Hardy Homage Tshirt, Tom Hardy Fan Tees, Tom Hardy Retro 90s Sweater, Tom Hardy Merch Gift",
-        "price": "$25.65",
-        "category": "RETRO",
-        "img_url": "",
-        "img_slug": "4474327953-limited-tom-hardy-vintage-shirt-tom-hardy-homage-t.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4474327953/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "gift for dad",
-            "Birthday gift",
-            "gift for him",
-            "Tom Hardy",
-            "Tom Hardy shirt",
-            "Tom Hardy merch",
-            "Tom Hardy movie",
-            "Tom Hardy t shirt",
-            "Tom Hardy tee",
-            "Tom Hardy sweater",
-            "solomons bakery",
-            "Alfie solomons",
-            "Bronson Tom hardy"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4474327501,
-        "title": "Limited Fitzwilliam Darcy Shirt - Fitzwilliam Darcy Tshirt,Fitzwilliam Darcy T shirt,Darcy T-shirt,Darcy Merch,Pride and Prejudice Shirt",
-        "price": "$25.65",
-        "category": "LIMITED",
-        "img_url": "",
-        "img_slug": "4474327501-limited-fitzwilliam-darcy-shirt-fitzwilliam-darcy-.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4474327501/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "Bootleg shirt",
-            "gift for dad",
-            "Birthday gift",
-            "gift for her",
-            "gift for him",
-            "Fitzwilliam Darcy",
-            "mr darcy shirt",
-            "mr darcy tshirt",
-            "mr darcy t shirt",
-            "mr darcy merch",
-            "prejudice shirt",
-            "pride and prejudice",
-            "elizabeth bennet"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4538578851,
-        "title": "Limited ZAZIE BEETZ Vintage Shirt, Zazie Beetz TShirt, Zazie Beetz Kids Tee, Zazie Beetz Merch Shirt, Zazie Beetz Tees, Zazie Beetz Merch UD",
-        "price": "$25.65",
-        "category": "LIMITED",
-        "img_url": "",
-        "img_slug": "4538578851-limited-zazie-beetz-vintage-shirt-zazie-beetz-tshi.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4538578851/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "Zazie Beetz",
-            "Zazie Beetz Tee",
-            "Zazie Beetz Shirt",
-            "Celebrity Tee",
-            "Actress Shirt",
-            "Graphic Tee",
-            "Unisex Shirt",
-            "Cotton T Shirt",
-            "Fan Merchandise",
-            "Movie Fan Gift",
-            "Pop Culture Tee",
-            "Vintage Tee",
-            "Gift for Fans"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4538593006,
-        "title": "Limited Sam Claflin Shirt, Retro Sam Claflin T-Shirt,Bootleg Vintage, Sam Clafin Sweatshirt, Sam Claflin gift for fan UD",
-        "price": "$25.65",
-        "category": "RETRO",
-        "img_url": "",
-        "img_slug": "4538593006-limited-sam-claflin-shirt-retro-sam-claflin-t-shir.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4538593006/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "Sam Claflin",
-            "Sam Claflin Tee",
-            "Sam Claflin Shirt",
-            "Celebrity Tee",
-            "Actor Shirt",
-            "Graphic Tee",
-            "Unisex Shirt",
-            "Cotton T Shirt",
-            "Fan Merchandise",
-            "Movie Fan Gift",
-            "Gift for Fans"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4538591600,
-        "title": "Limited Emma Watson Shirt-Emma Watson Tshirt,Emma Watson T-shirt,Emma Watson T shirt,Emma Watson Sweatshirt,Emma Watson Tee,Emma Watson UD",
-        "price": "$25.65",
-        "category": "LIMITED",
-        "img_url": "",
-        "img_slug": "4538591600-limited-emma-watson-shirt-emma-watson-tshirt-emma-.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4538591600/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "Emma Watson",
-            "Emma Watson Tee",
-            "Emma Watson Shirt",
-            "Celebrity Tee",
-            "Actress Shirt",
-            "Movie Fan Gift",
-            "Graphic Tee",
-            "Vintage Tee",
-            "Unisex Shirt",
-            "Cotton T Shirt",
-            "Pop Culture Tee",
-            "Fan Merchandise",
-            "Gift for Fans"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4538589454,
-        "title": "Limited Millie Bobby Brown Fan T-Shirt, Sweatshirt, Youth Tee, Toddler T shirt UD",
-        "price": "$25.65",
-        "category": "LIMITED",
-        "img_url": "",
-        "img_slug": "4538589454-limited-millie-bobby-brown-fan-t-shirt-sweatshirt-.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4538589454/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "MBB Shirt",
-            "Celebrity Tee",
-            "Fan Apparel",
-            "Graphic Tee",
-            "Unisex T Shirt",
-            "Vintage Style Tee",
-            "Cotton Tshirt",
-            "Unisex Graphic",
-            "Soft Cotton Tee",
-            "Trendy Shirt",
-            "Streetwear Tee",
-            "Gift for Fans",
-            "Millie Bobby Brown"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4538590664,
-        "title": "Limited Noah Schnapp Tshirt Unisex for Men and Women  Graphic Tee  90s Style Gothic T-Shirt  Cool Top  Fan Art Inspired Tee UD",
-        "price": "$25.65",
-        "category": "RETRO",
-        "img_url": "",
-        "img_slug": "4538590664-limited-noah-schnapp-tshirt-unisex-for-men-and-wom.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4538590664/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "Actor Inspired Tee",
-            "Retro Portrait Tee",
-            "Vintage Graphic",
-            "Unisex T Shirt",
-            "Pop Culture Tee",
-            "Aesthetic Shirt",
-            "Fan Art Style",
-            "Streetwear Tee",
-            "Casual Graphic",
-            "Soft Cotton Tee",
-            "Minimalist Tee",
-            "Gift for Fans",
-            "Trendy Outfit"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4538153629,
-        "title": "Limited Pedro Pascal T-Shirt - Unisex vintage 90s Pedro Pascal , UD",
-        "price": "$25.65",
-        "category": "RETRO",
-        "img_url": "",
-        "img_slug": "4538153629-limited-pedro-pascal-t-shirt-unisex-vintage-90s-pe.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4538153629/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "pedro pascal",
-            "pedro shirt",
-            "actor tshirt",
-            "celebrity tee",
-            "fan shirt",
-            "graphic tee",
-            "vintage tee",
-            "unisex tshirt",
-            "movie fan gift",
-            "tv fan shirt",
-            "aesthetic tee",
-            "gift for fans",
-            "retro graphic"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4538164526,
-        "title": "Limited JAMIE CAMPBELL Retro T-shirt - Jamie Campbell Tee, Jamie Campbell Long Sleeve Shirt, Jamie Campbell Fans Tee UD",
-        "price": "$25.65",
-        "category": "RETRO",
-        "img_url": "",
-        "img_slug": "4538164526-limited-jamie-campbell-retro-t-shirt-jamie-campbel.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4538164526/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "jamie campbell",
-            "jamie campbell bower",
-            "celebrity tee",
-            "jamie bower",
-            "vintage style tee",
-            "gift for fans",
-            "tv fan shirt",
-            "movie fan shirt",
-            "jamie campbell shirt",
-            "jamie campbell tee",
-            "actor tshirt",
-            "graphic tee"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4538154529,
-        "title": "Limited Jensen Ackles 90s Shirt, Vintage Jensen Ackles Shirt, Jensen Ackles Graphic Unisex Clothing, Retro Jensen Ackles Shirt For Fan UD",
-        "price": "$25.65",
-        "category": "RETRO",
-        "img_url": "",
-        "img_slug": "4538154529-limited-jensen-ackles-90s-shirt-vintage-jensen-ack.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4538154529/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "jensen ackles",
-            "actor tshirt",
-            "jensen ackles shirt",
-            "jensen ackles tee",
-            "jensen ackles Tshirt",
-            "unisex tshirt",
-            "tv fan gift",
-            "aesthetic tee",
-            "gift for fans",
-            "statement shirt",
-            "vintage tshirt"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4535453962,
-        "title": "Limited FINN WOLFHARD Shirt, Finn Wolfhard Tshirt, Finn Wolfhard Sweatshirt, Finn Wolfhard Merch, Finn Wolfhard Lover Shirt UD",
-        "price": "$25.65",
-        "category": "HOODIES",
-        "img_url": "",
-        "img_slug": "4535453962-limited-finn-wolfhard-shirt-finn-wolfhard-tshirt-f.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4535453962/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "Finn Wolfhard",
-            "Finn Shirt",
-            "Actor T Shirt",
-            "Celebrity Tee",
-            "Graphic Tee",
-            "Vintage Tee",
-            "Movie Fan Shirt",
-            "Retro Graphic Tee",
-            "Finn T-Shirt",
-            "Finn Shirt hoodie",
-            "Finn sweatshirt",
-            "FINN WOLFHARD tee",
-            "FINN WOLFHARD Merch"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4535438885,
-        "title": "Limited Daniel Radcliffe Vintage Unisex Shirt, Vintage Daniel Radcliffe TShirt Gift For Him and Her - Express Shipping Available UD",
-        "price": "$25.65",
-        "category": "LIMITED",
-        "img_url": "",
-        "img_slug": "4535438885-limited-daniel-radcliffe-vintage-unisex-shirt-vint.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4535438885/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "Daniel Radcliffe",
-            "Actor Portrait",
-            "British Actor",
-            "Movie Star Gift",
-            "Film Lover Gift",
-            "Celebrity Art",
-            "Gift for Fans",
-            "Radcliffe Shirt",
-            "Celebrity Shirt",
-            "Vintage Tee",
-            "Fan Apparel",
-            "Movie Lover Gift",
-            "Unisex Tee"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4535448594,
-        "title": "Limited CARLOS ALCARAZ Vintage Shirt, Carlos Alcaraz Homage TShirt, Carlos Alcaraz Fan Tees,Carlos Alcaraz Retro 90s Shirt,Carlos Alcaraz",
-        "price": "$25.65",
-        "category": "RETRO",
-        "img_url": "",
-        "img_slug": "4535448594-limited-carlos-alcaraz-vintage-shirt-carlos-alcara.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4535448594/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "custom shirt",
-            "Vintage shirt",
-            "CARLOS ALCARAZ",
-            "CARLOS ALCARAZ tee",
-            "CARLOS ALCARAZ fan",
-            "ALCARAZ hoomage",
-            "Alcaraz Tennis",
-            "Tennis Gift",
-            "Grand Slam",
-            "Tennis Player",
-            "Carlitos",
-            "Roland Garros",
-            "Alcaraz merch"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4398536571,
-        "title": "Retro Oliver Stark Retro Shirt, Nine Eleven Shirt, Series Retro Shirt, Evan Buckley 90's Vintage Homage Shirt, Oliver Stark Gift for fan",
-        "price": "$25.65",
-        "category": "RETRO",
-        "img_url": "",
-        "img_slug": "4398536571-retro-oliver-stark-retro-shirt-nine-eleven-shirt-s.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4398536571/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "custom shirt",
-            "Evan Buckley",
-            "Evan Buckley shirt",
-            "Buckaroo",
-            "ABigail Clark",
-            "Department",
-            "Fictiopn Character",
-            "Buck Retro",
-            "Gift for Fan",
-            "Vintage shirt",
-            "Maddie Buckley",
-            "Oliver Stark",
-            "Oliver Stark Retro"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4464365064,
-        "title": "Limited YIM SI-WAN Shirt - Yim Si-wan Vintage Shirt, Yim Si-wan Retro 90s Tshirt, Yim Si-wan Bootleg Tee, Yim Si-wan Sweater",
-        "price": "$25.65",
-        "category": "RETRO",
-        "img_url": "",
-        "img_slug": "4464365064-limited-yim-si-wan-shirt-yim-si-wan-vintage-shirt-.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4464365064/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "custom shirt",
-            "YIM SI-WAN",
-            "YIM SI-WAN shirt",
-            "YIM SI-WAN 90s",
-            "YIM SI-WAN Retro",
-            "K-Drama shirt",
-            "Korean Actor shirt",
-            "Rising Star shirt",
-            "YIM SI-WAN Vintage",
-            "Won Ji-an",
-            "Jo Yu-ri",
-            "Park Gyu-young",
-            "Kang Ha-neul"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4464361653,
-        "title": "Limited PIERRE NINEY Vintage Shirt, Pierre Niney Homage Tshirt, Pierre Niney Fan Tees, Pierre Niney Retro 90s Sweater",
-        "price": "$25.65",
-        "category": "RETRO",
-        "img_url": "",
-        "img_slug": "4464361653-limited-pierre-niney-vintage-shirt-pierre-niney-ho.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4464361653/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "custom shirt",
-            "PIERRE NINEY",
-            "PIERRE NINEY shirt",
-            "PIERRE NINEY merch",
-            "PIERRE NINEY Tees",
-            "PIERRE NINEY Tshirt",
-            "PIERRE NINEY sweater",
-            "PIERRE NINEY gift",
-            "PIERRE NINEY Film",
-            "PIERRE NINEY movie",
-            "Natasha Andrews",
-            "Virginie Effra"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4387917941,
-        "title": "Retro MARCELLO HERNANDEZ Shirt, Marcello Hernandez Tshirt, Marcello Hernandez Sweateshirt, Marcello Hernandez Merch",
-        "price": "$25.65",
-        "category": "RETRO",
-        "img_url": "",
-        "img_slug": "4387917941-retro-marcello-hernandez-shirt-marcello-hernandez-.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4387917941/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "custom shirt",
-            "Marcello Hernadez",
-            "Marcello Shirt",
-            "Marcello Tee",
-            "Marcello Tees",
-            "Marcello Sweatshirt",
-            "Marcello Gift",
-            "Marcello Sweater",
-            "Marcello fan",
-            "Hernandez shirt",
-            "Marcello clothing",
-            "Hernandez Tees",
-            "Hernandez Tshirt"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4387916599,
-        "title": "Eggward Funny Shirt, Gift Shirts, Gag Gifts, Meme Shirts, Parody Gifts, Edward Cullen Funny, Sarcastic Tee, Funny Egg",
-        "price": "$25.65",
-        "category": "LIMITED",
-        "img_url": "",
-        "img_slug": "4387916599-eggward-funny-shirt-gift-shirts-gag-gifts-meme-shi.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4387916599/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "custom shirt",
-            "Robert Pattinson",
-            "Edward Cullen",
-            "Edward Sweatshirt",
-            "Edward Cullen shirt",
-            "Edward shirt",
-            "Edward Cullen Tshirt",
-            "Eggward Cullen",
-            "Eggward Funny Shirt",
-            "Eggward Shirt",
-            "Edward Cullen Funny",
-            "Team Edward Cullen"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4458814066,
-        "title": "Limited Louis Partridge Graphic Tee, Unisex Cotton Shirt UD",
-        "price": "$25.65",
-        "category": "LIMITED",
-        "img_url": "",
-        "img_slug": "4458814066-limited-louis-partridge-graphic-tee-unisex-cotton-.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4458814066/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "Bootleg shirt",
-            "gift for dad",
-            "Birthday gift",
-            "gift for her",
-            "gift for him",
-            "Louis Partridge",
-            "Louis Partridge meme",
-            "Millie bobby Brown",
-            "henry canvill",
-            "Louis Partridge fan",
-            "enola holmes",
-            "Louis Partridge tee",
-            "Enola homes merch"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4455971094,
-        "title": "Limited James Marsden Vintage Shirt, James Marsden Inspired 90' TShirt, James Marsden Long Sleeve Shirt, James Marsden UD",
-        "price": "$25.65",
-        "category": "RETRO",
-        "img_url": "",
-        "img_slug": "4455971094-limited-james-marsden-vintage-shirt-james-marsden-.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4455971094/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "Bootleg shirt",
-            "gift for dad",
-            "Birthday gift",
-            "gift for her",
-            "gift for him",
-            "James Marsden",
-            "James Marsden shirt",
-            "James Marsden tee",
-            "James Marsden merch",
-            "James Marsden fans",
-            "James Marsden album",
-            "James Marsden Tshirt",
-            "James Marsden retro"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4454343317,
-        "title": "Limited Jacob Elordi Shirt, Jacob Elordi Tee,Jacob Elordi T-shirt,Jacob Elordi T shirt,Jacob Elordi ,Jacob Elordi Hoodie,Elordi Fan UD",
-        "price": "$25.65",
-        "category": "HOODIES",
-        "img_url": "",
-        "img_slug": "4454343317-limited-jacob-elordi-shirt-jacob-elordi-tee-jacob-.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4454343317/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "Bootleg shirt",
-            "gift for dad",
-            "Birthday gift",
-            "gift for her",
-            "gift for him",
-            "Jacob Elordi",
-            "Jacob Elordi shirt",
-            "Jacob Elordi merch",
-            "Jacob Elordi tees",
-            "Jacob Elordi movies",
-            "Jacob Elordi gift",
-            "Jacob Elordi fan",
-            "Jacob Elordi sweater"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4452834747,
-        "title": "Limited Aubrey Plaza Shirt - Aubrey Plaza Tshirt,Aubrey Plaza T-shirt,Aubrey Plaza T shirt,Aubrey Plaza Merch,Aubrey Plaza Sweatshirt UD",
-        "price": "$25.65",
-        "category": "HOODIES",
-        "img_url": "",
-        "img_slug": "4452834747-limited-aubrey-plaza-shirt-aubrey-plaza-tshirt-aub.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4452834747/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "Bootleg shirt",
-            "gift for dad",
-            "Birthday gift",
-            "gift for her",
-            "gift for him",
-            "Aubrey Plaza Tee",
-            "Aubrey Plaza shirt",
-            "Aubrey Plaza sweater",
-            "Aubrey Plaza hoodie",
-            "Aubrey Plaza merch",
-            "April Ludgate",
-            "Ingrid Thorburn",
-            "Lenny Busker"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4452839402,
-        "title": "Limited David Tennant Shirt, Movie Fan Merch, Unisex tees UD",
-        "price": "$25.65",
-        "category": "LIMITED",
-        "img_url": "",
-        "img_slug": "4452839402-limited-david-tennant-shirt-movie-fan-merch-unisex.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4452839402/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "Bootleg shirt",
-            "gift for dad",
-            "Birthday gift",
-            "gift for her",
-            "gift for him",
-            "David Tennant",
-            "David Tennant tees",
-            "David Tennant Tee",
-            "David Tennant shirt",
-            "David Tennant gift",
-            "David Tennant merch",
-            "David Tennant fans",
-            "Georgia Tennat"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4452839412,
-        "title": "Limited Freddie Highmore Tshirt, Freddie Highmore Shirt, Freddie Highmore Retro Tshirt, Freddie Highmore Sweater, Freddie Highmore UD",
-        "price": "$25.65",
-        "category": "RETRO",
-        "img_url": "",
-        "img_slug": "4452839412-limited-freddie-highmore-tshirt-freddie-highmore-s.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4452839412/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "Bootleg shirt",
-            "gift for dad",
-            "Birthday gift",
-            "gift for her",
-            "gift for him",
-            "Freddie Highmore",
-            "Freddie Highmore tee",
-            "Freddie Highmore fan",
-            "Freddie merch",
-            "Movies tee",
-            "Freddie gift",
-            "Gift valentine"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4452831825,
-        "title": "Limited Anya Taylor Joy Shirt - Anya Taylor Joy Tshirt,Anya Taylor Joy T-shirt,Anya Taylor Joy Sweatshirt,Anya Merch UD",
-        "price": "$25.65",
-        "category": "HOODIES",
-        "img_url": "",
-        "img_slug": "4452831825-limited-anya-taylor-joy-shirt-anya-taylor-joy-tshi.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4452831825/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "Bootleg shirt",
-            "gift for dad",
-            "Birthday gift",
-            "gift for her",
-            "gift for him",
-            "Anya Taylor Joy",
-            "Anya Taylor Joy Tee",
-            "Anya Taylor shirt",
-            "Anya Taylor fun",
-            "Anya Taylor merch",
-            "Anya Taylor hoodie",
-            "Anya Taylor poster",
-            "Queens Gambit shirt"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4452834769,
-        "title": "Limited Harvey Specter Shirt, Gabriel Macht Fan Tee UD",
-        "price": "$25.65",
-        "category": "LIMITED",
-        "img_url": "",
-        "img_slug": "4452834769-limited-harvey-specter-shirt-gabriel-macht-fan-tee.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4452834769/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "Bootleg shirt",
-            "gift for dad",
-            "Birthday gift",
-            "gift for her",
-            "gift for him",
-            "Harvey Specter",
-            "Harvey Specter shirt",
-            "Harvey Specter merch",
-            "Gabiel match",
-            "meghan markle",
-            "Sarah Rafferty",
-            "Rick Hoffman",
-            "Harvey Specter print"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4447438153,
-        "title": "Limited Maggie Smith Shirt, Maggie Smith Vintage Tshirt, Maggie Smith Tees, Maggie Smith, Maggie Smith Poster, Maggie Smith McGonagall",
-        "price": "$25.65",
-        "category": "LIMITED",
-        "img_url": "",
-        "img_slug": "4447438153-limited-maggie-smith-shirt-maggie-smith-vintage-ts.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4447438153/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "Bootleg shirt",
-            "gift for dad",
-            "Birthday gift",
-            "Maggie Smith",
-            "Maggie Smith shirt",
-            "Maggie Smith tee",
-            "halloween gift",
-            "gift for her",
-            "gift for him",
-            "movie tees",
-            "gleen powel shirt",
-            "laura dern",
-            "daniel radcliffe"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4447438167,
-        "title": "Limited Michael B Jordan, Michael B Jordan Shirt, Retro Michael B Jordan Shirt, Vintage Michael B Jordan Tshirt, Michael B Jordan Merch",
-        "price": "$25.65",
-        "category": "RETRO",
-        "img_url": "",
-        "img_slug": "4447438167-limited-michael-b-jordan-michael-b-jordan-shirt-re.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4447438167/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "Bootleg shirt",
-            "gift for dad",
-            "Birthday gift",
-            "Gossip girl art",
-            "Michael B Jordan tee",
-            "retro clothing shirt",
-            "hip hop t-shirt",
-            "Lori Harvey",
-            "Chadwick Boseman",
-            "Khalid Jordan",
-            "Jamila Jordan",
-            "Movie shirt",
-            "Valentine's gift"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4447438177,
-        "title": "Limited PHIL COLLINS 90's T-shirt,phil collins Bootleg Tees, phil collins Fans Gift, phil collins Vintage Retro, phil collins Youth Kids Tee",
-        "price": "$25.65",
-        "category": "RETRO",
-        "img_url": "",
-        "img_slug": "4447438177-limited-phil-collins-90-s-t-shirt-phil-collins-boo.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4447438177/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "Bootleg shirt",
-            "gift for dad",
-            "Birthday gift",
-            "PHIL COLLINS",
-            "PHIL COLLINS tees",
-            "PHIL COLLINS shirt",
-            "PHIL COLLINS merch",
-            "PHIL COLLINS tribute",
-            "PHIL COLLINS homage",
-            "Orianne Cevey",
-            "lily collins shirt",
-            "lily collins sweater",
-            "lily collins homage"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4447438195,
-        "title": "Limited sophie turner Vintage Shirt, sophie turner Homage Tshirt, sophie turner, sophie turner Retro 90s Sweater, Sansa stark Actor Merch",
-        "price": "$25.65",
-        "category": "RETRO",
-        "img_url": "",
-        "img_slug": "4447438195-limited-sophie-turner-vintage-shirt-sophie-turner-.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4447438195/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "gift for dad",
-            "Birthday gift",
-            "sophie turner",
-            "sophie turner tee",
-            "sophie turner merch",
-            "sophie turner homage",
-            "sophie turner shirt",
-            "Sansa stark shirt",
-            "sansa stark tee",
-            "movie tees",
-            "Sansa Stark 90's",
-            "Sansa stark vintage",
-            "sophie turner 90's"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4447444678,
-        "title": "Limited WHOOPI GOLDBERG T-shirt - Whoopi Goldberg Fans Gift, Whoopi Goldberg Retro Shirt, Whoopi Gold Funny Shirt, Whoopi Gold Bootleg Tees",
-        "price": "$25.65",
-        "category": "RETRO",
-        "img_url": "",
-        "img_slug": "4447444678-limited-whoopi-goldberg-t-shirt-whoopi-goldberg-fa.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4447444678/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "gift for dad",
-            "Birthday gift",
-            "WHOOPI GOLDBERG",
-            "WHOOPI GOLD tee",
-            "WHOOPI GOLD shirt",
-            "WHOOPI GOLD merch",
-            "WHOOPI GOLD gift",
-            "WHOOPI GOLD poster",
-            "WHOOPI GOLD homage",
-            "WHOOPI GOLD Tshirt",
-            "WHOOPI GOLD fan",
-            "homage shirt",
-            "Vintage shirt"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4447439134,
-        "title": "Limited Chuck Bass Shirt -Chuck Bass Gossip Girl Shirt,Chuck Bass Tshirt,Chuck Bass T-shirt,Chuck Bass T shirt,Chuck Bass Sweatshirt",
-        "price": "$25.65",
-        "category": "LIMITED",
-        "img_url": "",
-        "img_slug": "4447439134-limited-chuck-bass-shirt-chuck-bass-gossip-girl-sh.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4447439134/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "Bootleg shirt",
-            "gift for christmas",
-            "gift for dad",
-            "Birthday gift",
-            "Gossip Girl shirt",
-            "Gossip girl merch",
-            "Gossip girl art",
-            "Gossip girl gift",
-            "Chuck bass tee",
-            "Chuck bass shirt",
-            "Chuck bass merch",
-            "Chuck bass homage",
-            "nate archibald"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4443062430,
-        "title": "Limited STEFANIA SPAMPINATO Vintage Shirt, Stefania Spampinato Homage Tshirt, Stefania Spampinato Fan Tees, stefania spampinato Retro 90s",
-        "price": "$25.65",
-        "category": "RETRO",
-        "img_url": "",
-        "img_slug": "4443062430-limited-stefania-spampinato-vintage-shirt-stefania.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4443062430/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "Bootleg shirt",
-            "gift for christmas",
-            "gift for dad",
-            "Birthday gift",
-            "STEFANIA SPAMPINATO",
-            "Stefania shirt",
-            "Stefania gift",
-            "Stefania Homage",
-            "Stefania merch",
-            "Stefania Tees",
-            "Stefania sweater",
-            "Spampinato shirt",
-            "Spampinato tees"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4441436188,
-        "title": "Limited SERENA VAN WOODSEN Shirt, Serena Celia Van der Woodsen Homage T-Shirt, Serena Van Woodsen Retro 90s Tees",
-        "price": "$25.65",
-        "category": "RETRO",
-        "img_url": "",
-        "img_slug": "4441436188-limited-serena-van-woodsen-shirt-serena-celia-van-.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4441436188/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "custom shirt",
-            "Bootleg shirt",
-            "gift for christmas",
-            "gift for dad",
-            "Birthday gift",
-            "SERENA VAN WOODSEN",
-            "SERENA Sweater",
-            "VAN WOODSEN merch",
-            "VAN WOODSEN Shirt",
-            "VAN WOODSEN Tees",
-            "Serena Kids Tee",
-            "VAN WOODSEN Fans"
-        ],
-        "state": "active"
-    },
-    {
-        "listing_id": 4441436168,
-        "title": "Limited LISA BARLOW Vintage Shirt, Lisa Barlow Homage TShirt, Lisa Barlow Fan Tees, Lisa Barlow Retro 90s Shirt, Lisa Barlow Merch Gift",
-        "price": "$25.65",
-        "category": "RETRO",
-        "img_url": "",
-        "img_slug": "4441436168-limited-lisa-barlow-vintage-shirt-lisa-barlow-homa.jpg",
-        "etsy_url": "https://www.etsy.com/listing/4441436168/?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow",
-        "tags": [
-            "custom shirt",
-            "Bootleg shirt",
-            "gift for christmas",
-            "gift for dad",
-            "Birthday gift",
-            "LISA BARLOW",
-            "LISA BARLOW gift",
-            "LISA BARLOW shirt",
-            "LISA BARLOW Tees",
-            "LISA BARLOW Merch",
-            "LISA BARLOW Tshirt",
-            "LISA BARLOW Fan"
-        ],
-        "state": "active"
-    }
-];s", tag: "LIMITED", price: "$25.65", link: "https://www.etsy.com/listing/4447438177/", img: "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4447438177-phil-collins-9039s.jpg" },
-      { name: "sophie turner", tag: "LIMITED", price: "$25.65", link: "https://www.etsy.com/listing/4447438195/", img: "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4447438195-sophie-turner.jpg" },
-      { name: "WHOOPI GOLDBERG", tag: "LIMITED", price: "$25.65", link: "https://www.etsy.com/listing/4447444678/", img: "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4447444678-whoopi-goldberg.jpg" },
-      { name: "Chuck Bass", tag: "LIMITED", price: "$25.65", link: "https://www.etsy.com/listing/4447439134/", img: "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4447439134-chuck-bass.jpg" },
-      { name: "STEFANIA SPAMPINATO", tag: "LIMITED", price: "$25.65", link: "https://www.etsy.com/listing/4443062430/", img: "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4443062430-stefania-spampinato.jpg" },
-      { name: "SERENA VAN WOODSEN", tag: "LIMITED", price: "$25.65", link: "https://www.etsy.com/listing/4441436188/", img: "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4441436188-serena-van-woodsen.jpg" },
-      { name: "LISA BARLOW", tag: "LIMITED", price: "$25.65", link: "https://www.etsy.com/listing/4441436168/", img: "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4441436168-lisa-barlow.jpg" }
-    ];
-
+  {
+    "name": "Sam Wilson",
+    "tag": "HOODIES",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4422154361/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4422154361-sam-wilson.jpg"
+  },
+  {
+    "name": "FELIX",
+    "tag": "RETRO",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4426184564/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4426184564-felix-felix-sweater-felix.jpg"
+  },
+  {
+    "name": "CANDACE OWENS",
+    "tag": "LIMITED",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4426178709/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4426178709-candace-owens.jpg"
+  },
+  {
+    "name": "Tom Cruise",
+    "tag": "LIMITED",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4424779783/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4424779783-tom-cruise.jpg"
+  },
+  {
+    "name": "HAN",
+    "tag": "RETRO",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4424785710/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4424785710-han.jpg"
+  },
+  {
+    "name": "Sebastian Stan American actor Unisex Softstyle",
+    "tag": "LIMITED",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4422156528/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4422156528-sebastian-stan-american-actor-.jpg"
+  },
+  {
+    "name": "ANTONY STARR",
+    "tag": "RETRO",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4421453477/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4421453477-antony-starr.jpg"
+  },
+  {
+    "name": "Mads Mikkelsen Vintage",
+    "tag": "LIMITED",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4421455556/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4421455556-mads-mikkelsen.jpg"
+  },
+  {
+    "name": "JOHN STAMOS",
+    "tag": "RETRO",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4420703384/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4420703384-john-stamos.jpg"
+  },
+  {
+    "name": "JOHN OLIVER",
+    "tag": "RETRO",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4420703366/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4420703366-john-oliver.jpg"
+  },
+  {
+    "name": "DEVON SAWA",
+    "tag": "RETRO",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4413992850/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4413992850-devon-sawa.jpg"
+  },
+  {
+    "name": "Klaus Mikaelson Vintage",
+    "tag": "RETRO",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4413992870/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4413992870-klaus-mikaelson.jpg"
+  },
+  {
+    "name": "Stefan Salvatore Vintage",
+    "tag": "LIMITED",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4413992884/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4413992884-stefan-salvatore.jpg"
+  },
+  {
+    "name": "DAVID SPADE",
+    "tag": "RETRO",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4413358619/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4413358619-david-spade.jpg"
+  },
+  {
+    "name": "Sam Winchester Vintage",
+    "tag": "VINTAGE",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4413357637/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4413357637-sam-winchester.jpg"
+  },
+  {
+    "name": "animal cats lovers",
+    "tag": "LIMITED",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/1893848667/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/1893848667-animal-cats-lovers.jpg"
+  },
+  {
+    "name": "animal lovers",
+    "tag": "LIMITED",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/1892779421/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/1892779421-animal-lovers.jpg"
+  },
+  {
+    "name": "GEORGE LOPEZ",
+    "tag": "RETRO",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4398526332/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4398526332-george-lopez.jpg"
+  },
+  {
+    "name": "Tom Hardy",
+    "tag": "RETRO",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4474327953/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4474327953-tom-hardy.jpg"
+  },
+  {
+    "name": "Fitzwilliam Darcy",
+    "tag": "LIMITED",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4474327501/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4474327501-fitzwilliam-darcy.jpg"
+  },
+  {
+    "name": "ZAZIE BEETZ",
+    "tag": "LIMITED",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4538578851/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4538578851-zazie-beetz.jpg"
+  },
+  {
+    "name": "Sam Claflin",
+    "tag": "RETRO",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4538593006/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4538593006-sam-claflin.jpg"
+  },
+  {
+    "name": "Emma Watson",
+    "tag": "LIMITED",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4538591600/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4538591600-emma-watson.jpg"
+  },
+  {
+    "name": "Millie Bobby Brown Fan",
+    "tag": "LIMITED",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4538589454/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4538589454-millie-bobby-brown.jpg"
+  },
+  {
+    "name": "Noah Schnapp",
+    "tag": "RETRO",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4538590664/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4538590664-noah-schnapp.jpg"
+  },
+  {
+    "name": "Pedro Pascal",
+    "tag": "RETRO",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4538153629/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4538153629-pedro-pascal.jpg"
+  },
+  {
+    "name": "JAMIE CAMPBELL Retro",
+    "tag": "RETRO",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4538164526/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4538164526-jamie-campbell.jpg"
+  },
+  {
+    "name": "Jensen Ackles 90s",
+    "tag": "RETRO",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4538154529/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4538154529-jensen-ackles-90s.jpg"
+  },
+  {
+    "name": "FINN WOLFHARD",
+    "tag": "HOODIES",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4535453962/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4535453962-finn-wolfhard.jpg"
+  },
+  {
+    "name": "Daniel Radcliffe Vintage Unisex",
+    "tag": "LIMITED",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4535438885/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4535438885-daniel-radcliffe.jpg"
+  },
+  {
+    "name": "CARLOS ALCARAZ",
+    "tag": "RETRO",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4535448594/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4535448594-carlos-alcaraz.jpg"
+  },
+  {
+    "name": "Oliver Stark Retro",
+    "tag": "RETRO",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4398536571/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4398536571-oliver-stark.jpg"
+  },
+  {
+    "name": "YIM SI-WAN",
+    "tag": "RETRO",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4464365064/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4464365064-yim-siwan.jpg"
+  },
+  {
+    "name": "PIERRE NINEY",
+    "tag": "RETRO",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4464361653/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4464361653-pierre-niney.jpg"
+  },
+  {
+    "name": "MARCELLO HERNANDEZ",
+    "tag": "RETRO",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4387917941/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4387917941-marcello-hernandez.jpg"
+  },
+  {
+    "name": "Eggward Funny",
+    "tag": "LIMITED",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4387916599/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4387916599-eggward-funny.jpg"
+  },
+  {
+    "name": "Louis Partridge",
+    "tag": "LIMITED",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4458814066/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4458814066-louis-partridge-graphic-tee-un.jpg"
+  },
+  {
+    "name": "James Marsden",
+    "tag": "RETRO",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4455971094/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4455971094-james-marsden.jpg"
+  },
+  {
+    "name": "Jacob Elordi",
+    "tag": "HOODIES",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4454343317/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4454343317-jacob-elordi.jpg"
+  },
+  {
+    "name": "Aubrey Plaza",
+    "tag": "HOODIES",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4452834747/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4452834747-aubrey-plaza.jpg"
+  },
+  {
+    "name": "David Tennant",
+    "tag": "LIMITED",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4452839402/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4452839402-david-tennant.jpg"
+  },
+  {
+    "name": "Freddie Highmore",
+    "tag": "RETRO",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4452839412/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4452839412-freddie-highmore.jpg"
+  },
+  {
+    "name": "Anya Taylor Joy",
+    "tag": "HOODIES",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4452831825/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4452831825-anya-taylor-joy.jpg"
+  },
+  {
+    "name": "Harvey Specter",
+    "tag": "LIMITED",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4452834769/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4452834769-harvey-specter.jpg"
+  },
+  {
+    "name": "Maggie Smith",
+    "tag": "LIMITED",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4447438153/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4447438153-maggie-smith.jpg"
+  },
+  {
+    "name": "Michael B Jordan",
+    "tag": "RETRO",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4447438167/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4447438167-michael-b-jordan-michael-b-jor.jpg"
+  },
+  {
+    "name": "PHIL COLLINS 90's",
+    "tag": "RETRO",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4447438177/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4447438177-phil-collins-9039s.jpg"
+  },
+  {
+    "name": "sophie turner",
+    "tag": "RETRO",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4447438195/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4447438195-sophie-turner.jpg"
+  },
+  {
+    "name": "WHOOPI GOLDBERG",
+    "tag": "RETRO",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4447444678/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4447444678-whoopi-goldberg.jpg"
+  },
+  {
+    "name": "Chuck Bass",
+    "tag": "LIMITED",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4447439134/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4447439134-chuck-bass.jpg"
+  },
+  {
+    "name": "STEFANIA SPAMPINATO",
+    "tag": "RETRO",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4443062430/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4443062430-stefania-spampinato.jpg"
+  },
+  {
+    "name": "SERENA VAN WOODSEN",
+    "tag": "RETRO",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4441436188/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4441436188-serena-van-woodsen.jpg"
+  },
+  {
+    "name": "LISA BARLOW",
+    "tag": "RETRO",
+    "price": "$25.65",
+    "link": "https://www.etsy.com/listing/4441436168/",
+    "img": "https://raw.githubusercontent.com/Mkuboss/km28store/main/images/4441436168-lisa-barlow.jpg"
+  }
+];
     const grid = document.getElementById('grid');
     const searchInput = document.getElementById('search');
     const filterBtns = document.querySelectorAll('.filter-btn');
     const resultCount = document.getElementById('result-count');
     let activeFilter = 'ALL';
 
-
-    // Wishlist
     let wishlist = JSON.parse(localStorage.getItem('km28_wishlist') || '[]');
-    function updateWishCount() {
-      const el = document.getElementById('wishCount');
-      const num = document.getElementById('wishNum');
-      num.textContent = wishlist.length;
-      el.style.display = wishlist.length > 0 ? 'flex' : 'none';
-    }
     function toggleWish(e, link) {
       e.stopPropagation();
       const btn = e.currentTarget;
@@ -1865,39 +932,37 @@
         btn.classList.add('active');
       }
       localStorage.setItem('km28_wishlist', JSON.stringify(wishlist));
-      updateWishCount();
-    }
-    updateWishCount();
-
-    // Ad click tracking
-    function trackAdClick(slot, url) {
-      const key = 'km28_ad_clicks';
-      const data = JSON.parse(localStorage.getItem(key) || '{}');
-      data[slot] = (data[slot] || 0) + 1;
-      localStorage.setItem(key, JSON.stringify(data));
-      if (url && url !== '#') window.location.href = url;
     }
 
-    // Load ads from ads.json
-    let adsData = [];
-    fetch('./ads.json').then(r => r.json()).then(d => { adsData = d; }).catch(() => {});
+    function renderCards(list) {
+      resultCount.textContent = list.length;
+      if (list.length === 0) {
+        grid.innerHTML = '<div class="empty-state"><h3>No results found</h3><p>Try a different name or filter.</p></div>';
+        return;
+      }
+      let html = '';
+      list.forEach(function(p) {
+        var utmLink = p.link + '?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow';
+        var safeName = (p.name || '').replace(/'/g, '&#39;').replace(/"/g, '&quot;');
+        var safeLink = utmLink.replace(/'/g, '%27');
+        var isWished = wishlist.includes(p.link);
 
-    function getAd(slot) {
-      return adsData.find(a => a.slot === slot && a.active);
+        html += '<article class="product-card" style="cursor:pointer" onclick="location.href=&#39;' + safeLink + '&#39;">';
+        html += '<div class="card-img-wrap">';
+        html += '<span class="badge">' + (p.tag || 'LIMITED') + '</span>';
+        html += '<button class="wish-btn ' + (isWished ? 'active' : '') + '" onclick="toggleWish(event, &#39;' + p.link + '&#39;)" aria-label="Wishlist">❤</button>';
+        html += '<img loading="lazy" src="' + p.img + '" alt="' + safeName + '" onerror="this.onerror=null;this.src=&#39;https://placehold.co/400x300/1a1a1a/555?text=KM28&#39;">';
+        html += '</div>';
+        html += '<div class="card-body">';
+        html += '<h3 class="card-title">' + p.name + '</h3>';
+        html += '<p class="card-price">' + p.price + '</p>';
+        html += '<a class="buy-btn" href="' + safeLink + '" onclick="event.stopPropagation()" aria-label="Buy ' + safeName + ' tee on Etsy">BUY →</a>';
+        html += '</div>';
+        html += '</article>';
+      });
+      grid.innerHTML = html;
     }
 
-    function adCardHTML(ad) {
-      if (!ad) return '';
-      return `<article class="product-card ad-card" style="--cf:${ad.color_from};--ct:${ad.color_to}" onclick="trackAdClick('${ad.slot}', '${ad.url}')">
-        <div>
-          <div class="ad-logo">${ad.logo}</div>
-          <div class="ad-title">${ad.title}</div>
-          <div class="ad-sub">${ad.subtitle}</div>
-        </div>
-        <span class="ad-cta">${ad.cta}</span>
-      </article>`;
-    }
-    
     function applySort() {
       const val = document.getElementById('sortSelect').value;
       let list = [...products];
@@ -1906,33 +971,6 @@
       else if (val === 'newest') list.reverse();
       renderCards(list);
     }
-
-        function renderCards(list) {
-      resultCount.textContent = list.length;
-      if (list.length === 0) {
-        grid.innerHTML = '<div class="empty-state"><h3>No results found</h3><p>Try a different name or filter.</p></div>';
-        return;
-      }
-      let html = '';
-      list.forEach(function(p, i) {
-        var utmLink = p.link + '?utm_source=km28store&utm_medium=catalog&utm_campaign=buynow';
-        var safeName = (p.name || '').replace(/'/g, '&#39;').replace(/"/g, '&quot;');
-        var safeLink = utmLink.replace(/'/g, '%27');
-        html += '<article class="product-card" style="cursor:pointer" onclick="location.href=\'' + safeLink + '\'">';
-        html += '<div class="card-img-wrap">';
-        html += '<span class="badge">' + (p.tag || 'VINTAGE') + '</span>';
-        html += '<img loading="lazy" src="' + p.img + '" alt="' + safeName + '" onerror="this.onerror=null;this.src=&quot;https://placehold.co/400x300/1a1a1a/555?text=KM28&quot;">';
-        html += '</div>';
-        html += '<div class="card-body">';
-        html += '<h3 class="card-title">' + p.name + '</h3>';
-        html += '<p class="card-price">' + p.price + '</p>';
-        html += '<a class="buy-btn" href="' + safeLink + '" onclick="event.stopPropagation()" aria-label="Buy ' + safeName + ' tee on Etsy">BUY &#8594;</a>';
-        html += '</div>';
-        html += '</article>';
-      });
-      grid.innerHTML = html;
-    }
-
 
     function applyFilters() {
       const q = searchInput.value.toLowerCase().trim();
@@ -1954,12 +992,8 @@
     });
 
     searchInput.addEventListener('input', applyFilters);
-
-    // Initial render
     renderCards(products);
-  
-    });
-    </script>
+</script>
   <div class="wishlist-count" id="wishCount" title="View wishlist">❤ <span id="wishNum">0</span></div>
 </body>
 </html>
